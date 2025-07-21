@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Configure corretamente as chaves
 TELEGRAM_TOKEN = '7666054835:AAHEHyKwVAOwQjWYjQbbv9i7DDK6K4OL5pA'
-client = OpenAI(api_key=os.getenv("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"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/"
 
 def send_message(chat_id, text):
